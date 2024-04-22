@@ -705,10 +705,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 2dfd5042-15bd-4bf2-8010-7e51da8c8955
+  cloudProjectId: c18115f7-9258-4fb0-9aee-4322338052f8
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Aim Labs
+  projectName: AimLabs
   organizationId: bow1e
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

@@ -834,8 +834,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2073013821}
-        m_TargetAssemblyTypeName: HratScenaManager, Assembly-CSharp
-        m_MethodName: scenaHrat
+        m_TargetAssemblyTypeName: ZmeneniSceny, Assembly-CSharp
+        m_MethodName: zmenScenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1323,7 +1323,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd7da98ee9edb1e498848688b95f650e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scena: SkoreScena
 --- !u!114 &2073013824
 MonoBehaviour:
   m_ObjectHideFlags: 0

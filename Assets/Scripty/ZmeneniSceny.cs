@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PocetScenaManager : MonoBehaviour
+public class ZmeneniSceny : MonoBehaviour
 {
-   public string Scena;
-    public void scenaPocet()
+    public string Scena;
+    public void zmenScenu()
     {
         SceneManager.LoadScene(Scena);
     }
+    
 }

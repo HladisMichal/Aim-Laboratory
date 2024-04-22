@@ -207,8 +207,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1425238459}
-        m_TargetAssemblyTypeName: PresnostScenaManager, Assembly-CSharp
-        m_MethodName: scenaPresnost
+        m_TargetAssemblyTypeName: ZmeneniSceny, Assembly-CSharp
+        m_MethodName: zmenScenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -549,8 +549,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1425238460}
-        m_TargetAssemblyTypeName: RychlostScenaManager, Assembly-CSharp
-        m_MethodName: scenaRychlost
+        m_TargetAssemblyTypeName: ZmeneniSceny, Assembly-CSharp
+        m_MethodName: zmenScenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -907,9 +907,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1425238457}
-        m_TargetAssemblyTypeName: PocetScenaManager, Assembly-CSharp
-        m_MethodName: scenaPocet
+      - m_Target: {fileID: 1425238461}
+        m_TargetAssemblyTypeName: ZmeneniSceny, Assembly-CSharp
+        m_MethodName: zmenScenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 1425238456}
   - component: {fileID: 1425238460}
   - component: {fileID: 1425238459}
-  - component: {fileID: 1425238457}
+  - component: {fileID: 1425238461}
   m_Layer: 0
   m_Name: PredelavaniScen
   m_TagString: Untagged
@@ -1233,19 +1233,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1425238457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425238455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80a9be09288e2244babe745da8402e2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Scena: DalsiUkolScena
 --- !u!114 &1425238459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,7 +1242,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425238455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a6b1dde1cefcb64a89385079961e21c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b08c87571611b343b9088a24deee72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Scena: HraPresnostScena
@@ -1268,10 +1255,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1425238455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1be0a10eba1efab41a1f96cdb7a801fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b08c87571611b343b9088a24deee72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Scena: HraRychlostScena
+--- !u!114 &1425238461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425238455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b08c87571611b343b9088a24deee72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scena: DalsiUkolScena
 --- !u!1 &1502121053
 GameObject:
   m_ObjectHideFlags: 0
