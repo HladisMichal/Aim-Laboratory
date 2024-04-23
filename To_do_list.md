@@ -9,3 +9,6 @@
 + Vytvořit hitboxi
 + Spravit crosshair
 + ~~Vytvořit modely terčů~~
+
+## Bonusy
++ Výběr crosshair
