@@ -8,4 +8,4 @@
 + Udělat grafiku
 + Vytvořit hitboxi
 + Spravit crosshair
-+ Vytvořit modely terčů
++ ~~Vytvořit modely terčů~~
