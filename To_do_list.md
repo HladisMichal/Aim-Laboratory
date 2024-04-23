@@ -12,3 +12,6 @@
 
 ## Bonusy
 + Výběr crosshair
+
+## Materiály
+https://www.youtube.com/watch?v=sjlVox4f5Ww
