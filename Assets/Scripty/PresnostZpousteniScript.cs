@@ -7,8 +7,9 @@ public class ZpusteniScriptu : MonoBehaviour
 {
     public Button ZpustitBtn;
     public GameObject TercPrefab;
+    public GameObject infoTxt;
     private GameObject[] tercs = new GameObject[3];
-    private float timer = 0;
+    private float[] timers = new float[3];
     private bool gameStarted = false;
 
     void Start()
@@ -20,17 +21,14 @@ public class ZpusteniScriptu : MonoBehaviour
     {
         if (gameStarted)
         {
-            timer += Time.deltaTime;
-            if (timer > 5f)
+            for (int i = 0; i < 3; i++)
             {
-                timer = 0f;
-                foreach (GameObject terc in tercs)
+                timers[i] += Time.deltaTime;
+                if (timers[i] > 3f)
                 {
-                    if (terc != null)
-                    {
-                        Vector3 nahodnaPozice = new Vector3(Random.Range(10f, 1900f), Random.Range(10f, 1000f), -0.1f);
-                        terc.transform.position = nahodnaPozice;
-                    }
+                    Vector3 nahodnaPozice = new Vector3(Random.Range(10f, 1900f), Random.Range(10f, 1000f), -0.1f);
+                    tercs[i].transform.position = nahodnaPozice;
+                    timers[i] = 0f;
                 }
             }
         }
@@ -39,8 +37,9 @@ public class ZpusteniScriptu : MonoBehaviour
     void ZpustHru()
     {
         ZpustitBtn.gameObject.SetActive(false);
-        gameStarted = true;
+        infoTxt.gameObject.SetActive(false);
 
+        gameStarted = true;
         for (int i = 0; i < 3; i++)
         {
             Vector3 nahodnaPozice = new Vector3(Random.Range(10f, 1900f), Random.Range(10f, 1000f), -0.1f);
