@@ -6,7 +6,7 @@ Hra se dá stáhnout z githubu a poté se musí otevřít v programu Unity.
 ## Gamemody
 
 ## Nástroje
-Celý projekt jsme psali v nejnovější verzi __Unity__ a jazyce __C#__.
-Pro kolaboraci jsme používali __Github__, na kterém jsme taky měli soubor s věcmi, které ještě musíme udělat. Pokud jsme tedy pracovali na projektu i doma, mohli jsme se podívat, co například splnil ten druhý a co je ještě potřeba udělat.
-Ke komunikaci mimo školu jsme používali __Discord__.
++ Celý projekt jsme psali v nejnovější verzi __Unity__ a jazyce __C#__.
++ Pro kolaboraci jsme používali __Github__, na kterém jsme taky měli soubor s věcmi, které ještě musíme udělat. Pokud jsme tedy pracovali na projektu i doma, mohli jsme se podívat, co například splnil ten druhý a co je ještě potřeba udělat.
++ Ke komunikaci mimo školu jsme používali __Discord__.
 //Obrázky atd.
