@@ -15,3 +15,4 @@
 
 ## Materiály
 https://www.youtube.com/watch?v=sjlVox4f5Ww
+Statistiky: https://www.youtube.com/watch?v=B2JsymHzgvE
