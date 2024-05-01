@@ -11,28 +11,58 @@ public class ZpusteniScriptu : MonoBehaviour
     private GameObject[] tercs = new GameObject[3];
     private float[] timers = new float[3];
     private bool gameStarted = false;
+    private RaycastHit2D hit; 
 
     void Start()
     {
         ZpustitBtn.onClick.AddListener(ZpustHru);
+        hit = new RaycastHit2D();
     }
 
-    void Update()
+    void MoveTargets()
     {
-        if (gameStarted)
+        
+        for (int i = 0; i < 3; i++)
         {
-            for (int i = 0; i < 3; i++)
+            timers[i] += Time.deltaTime;
+            if (timers[i] > 3f) 
             {
-                timers[i] += Time.deltaTime;
-                if (timers[i] > 3f)
-                {
-                    Vector3 nahodnaPozice = new Vector3(Random.Range(10f, 1900f), Random.Range(10f, 1000f), -0.1f);
-                    tercs[i].transform.position = nahodnaPozice;
-                    timers[i] = 0f;
-                }
+                Vector3 nahodnaPozice = new Vector3(Random.Range(2790f, 1070f), Random.Range(590f, -230f), -50f);
+                tercs[i].transform.position = nahodnaPozice;
+                timers[i] = 0f;
             }
         }
     }
+
+    void Update()
+{
+  if (gameStarted)
+  {
+    MoveTargets();
+
+    if (Input.GetMouseButtonDown(0))
+    Debug.Log("stiknuti tlacitka!");
+{
+  if (Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero))
+      Debug.Log("ten dlouhy kod");
+  {
+    if (hit.collider != null)
+{
+    
+    if (hit.collider.gameObject.tag == "Terc")
+    {
+        Debug.Log("cosi že tag se rovna Terc");
+        Vector3 novaPozice = new Vector3(Random.Range(2790f, 1070f), Random.Range(590f, -230f), -50f);
+        hit.collider.gameObject.transform.position = novaPozice;
+    }
+}
+      
+
+    
+  }
+}
+  }
+}
 
     void ZpustHru()
     {
@@ -42,8 +72,9 @@ public class ZpusteniScriptu : MonoBehaviour
         gameStarted = true;
         for (int i = 0; i < 3; i++)
         {
-            Vector3 nahodnaPozice = new Vector3(Random.Range(10f, 1900f), Random.Range(10f, 1000f), -0.1f);
+            Vector3 nahodnaPozice = new Vector3(Random.Range(2790f, 1070f), Random.Range(590f, -230f), -50f);
             tercs[i] = Instantiate(TercPrefab, nahodnaPozice, Quaternion.identity);
+            tercs[i].tag = "Terc";
         }
     }
 }
