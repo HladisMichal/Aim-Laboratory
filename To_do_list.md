@@ -21,4 +21,5 @@ Design na main menu:
 + https://www.youtube.com/watch?v=-GWjA6dixV4<br>
 + https://www.youtube.com/watch?v=Cq_Nnw_LwnI<br>
 + https://www.youtube.com/watch?v=IuuKUaZQiSU<br>
-+ https://www.youtube.com/watch?v=RsgiYqLID-U
++ https://www.youtube.com/watch?v=RsgiYqLID-U<br>
+Timer: https://www.youtube.com/watch?v=ijAN0QI70UU
