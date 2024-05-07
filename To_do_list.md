@@ -15,10 +15,10 @@
 
 ## Materiály
 Githuv desktop: https://www.youtube.com/watch?v=sjlVox4f5Ww<br>
-Statistiky: https://www.youtube.com/watch?v=B2JsymHzgvE
-Design na main menu:
-https://www.youtube.com/watch?v=DX7HyN7oJjE<br>
-https://www.youtube.com/watch?v=-GWjA6dixV4<br>
-https://www.youtube.com/watch?v=Cq_Nnw_LwnI<br>
-https://www.youtube.com/watch?v=IuuKUaZQiSU<br>
-https://www.youtube.com/watch?v=RsgiYqLID-U
+Statistiky: https://www.youtube.com/watch?v=B2JsymHzgvE<br>
+Design na main menu:<br>
++ https://www.youtube.com/watch?v=DX7HyN7oJjE<br>
++ https://www.youtube.com/watch?v=-GWjA6dixV4<br>
++ https://www.youtube.com/watch?v=Cq_Nnw_LwnI<br>
++ https://www.youtube.com/watch?v=IuuKUaZQiSU<br>
++ https://www.youtube.com/watch?v=RsgiYqLID-U
