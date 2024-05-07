@@ -14,5 +14,5 @@
 + Výběr crosshair
 
 ## Materiály
-Githuv desktop: https://www.youtube.com/watch?v=sjlVox4f5Ww<br>
+Github desktop: https://www.youtube.com/watch?v=sjlVox4f5Ww<br>
 Statistiky: https://www.youtube.com/watch?v=B2JsymHzgvE
