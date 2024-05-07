@@ -16,7 +16,7 @@
 ## Materiály
 Githuv desktop: https://www.youtube.com/watch?v=sjlVox4f5Ww<br>
 Statistiky: https://www.youtube.com/watch?v=B2JsymHzgvE<br>
-Design na main menu:<br>
+Design na main menu:
 + https://www.youtube.com/watch?v=DX7HyN7oJjE<br>
 + https://www.youtube.com/watch?v=-GWjA6dixV4<br>
 + https://www.youtube.com/watch?v=Cq_Nnw_LwnI<br>
