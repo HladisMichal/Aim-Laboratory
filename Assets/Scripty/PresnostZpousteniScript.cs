@@ -10,13 +10,11 @@ public class ZpusteniScriptu : MonoBehaviour
     public GameObject infoTxt;
     private GameObject[] tercs = new GameObject[3];
     private float[] timers = new float[3];
-    public static bool GameStarted = false;
-    private RaycastHit2D hit; 
+    public static bool GameStarted = false; 
 
     void Start()
     {
         ZpustitBtn.onClick.AddListener(ZpustHru);
-        hit = new RaycastHit2D();
     }
 
     void MoveTargets()

@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Kliknuti : MonoBehaviour
 {
+    public static int pocetKliknuti = 0;
     public GameObject TercPrefab;
-    private GameObject[] tercs = new GameObject[3];
+    public Text VyherniText;
+    public Text PocetTxt;
+    public Text CasTxt;
+    public static float cas = 0;
+    public bool GameStarted = false;
 
-   
     void Start()
     {
        
@@ -16,22 +21,33 @@ public class Kliknuti : MonoBehaviour
    
     void Update()
     {
-        /*if(GameStarted)
+        if (GameStarted)
         {
-            for (int i = 0; i < tercs.Length; i++)
-        {
-           tercs = GameObject.FindGameObjectsWithTag("Terc");
+            cas+= Time.deltaTime;
+            CasTxt.text = cas.ToString("F2");
+            PocetTxt.text = pocetKliknuti.ToString();
         }
-        }*/
+        
+        if (pocetKliknuti == 20)
+        {
+            GameStarted = false;
+            TercPrefab.SetActive(false);
+            VyherniText.transform.position = new Vector3(21f, 46f,-15f);
+            VyherniText.text = "Konec hry tvùj èas byl: "+cas.ToString("F2");
+            
+        }
     }
 
     public void Kliknuto()
     {    
             
-     Vector3 nahodnaPozice = new Vector3(Random.Range(160f, 1850f), Random.Range(30f, 920f), -50f);
-     TercPrefab.transform.position = nahodnaPozice;
-    //tercs[i].transform.position = nahodnaPozice;
-            
-        
+     Vector3 nahodnaPozice = new Vector3(Random.Range(-788f, 894f), Random.Range(-489f, 364f), -50f);
+        TercPrefab.transform.position = nahodnaPozice;
+        pocetKliknuti++;
+        Debug.Log(pocetKliknuti);
+    }
+    public void Zpusteno()
+    {
+        GameStarted = true;
     }
 }
