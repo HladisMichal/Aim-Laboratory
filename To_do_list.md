@@ -13,6 +13,7 @@
 
 ## Bonusy
 + Výběr crosshair
++ model zbraně která střílí na terče
 
 ## Materiály
 Github desktop: https://www.youtube.com/watch?v=sjlVox4f5Ww<br>
