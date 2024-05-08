@@ -7,50 +7,58 @@ public class ZpusteniScriptu : MonoBehaviour
 {
     public Button ZpustitBtn;
     public GameObject TercPrefab;
+    public GameObject TercPrefab1;
+    public GameObject TercPrefab2;
     public GameObject infoTxt;
-    private GameObject[] tercs = new GameObject[3];
-    private float[] timers = new float[3];
+
+    private double timer = initialDelay;
+    private static double initialDelay = 1000;
+    private double rozdil = 10;
     public static bool GameStarted = false; 
+    private int kliknutiVedle = 0;
 
     void Start()
     {
-        ZpustitBtn.onClick.AddListener(ZpustHru);
     }
 
     void MoveTargets()
     {
-        
-        for (int i = 0; i < 3; i++)
+
+        timer--;
+        if (timer <= 0) 
         {
-            timers[i] += Time.deltaTime;
-            if (timers[i] > 3f) 
-            {
-                Vector3 nahodnaPozice = new Vector3(Random.Range(160f, 1850f), Random.Range(30f, 920f), -50f);
-                tercs[i].transform.position = nahodnaPozice;
-                timers[i] = 0f;
-            }
+            Vector3 nahodnaPozice = new Vector3(Random.Range(101f, 1878f), Random.Range(30f, 904f), -50f);
+            TercPrefab.transform.position = nahodnaPozice;
+            Vector3 nahodnaPozice2 = new Vector3(Random.Range(101f, 1878f), Random.Range(30f, 904f), -50f);
+            TercPrefab1.transform.position = nahodnaPozice2;
+            Vector3 nahodnaPozice3 = new Vector3(Random.Range(101f, 1878f), Random.Range(30f, 904f), -50f);
+            TercPrefab2.transform.position = nahodnaPozice3;
+            initialDelay -= rozdil;
+            timer = initialDelay;
         }
     }
 
     void Update()
     {
-    if (GameStarted)
+        if (GameStarted)
         {
             MoveTargets();
+
+           
         }
     }
+    
 
-    void ZpustHru()
+    public void ZpustHru()
     {
         ZpustitBtn.gameObject.SetActive(false);
         infoTxt.gameObject.SetActive(false);
-
         GameStarted = true;
-        for (int i = 0; i < 3; i++)
-        {
-            Vector3 nahodnaPozice = new Vector3(Random.Range(160f, 1850f), Random.Range(30f, 920f), -50f);
-            tercs[i] = Instantiate(TercPrefab, nahodnaPozice, Quaternion.identity);
-            tercs[i].tag = i.ToString();
-        }
+        Vector3 nahodnaPozice = new Vector3(Random.Range(101f, 1878f), Random.Range(30f, 904f), -50f);
+        TercPrefab.transform.position = nahodnaPozice;
+        Vector3 nahodnaPozice2 = new Vector3(Random.Range(101f, 1878f), Random.Range(30f, 904f), -50f);
+        TercPrefab1.transform.position = nahodnaPozice2;
+        Vector3 nahodnaPozice3 = new Vector3(Random.Range(101f, 1878f), Random.Range(30f, 904f), -50f);
+        TercPrefab2.transform.position = nahodnaPozice3;
     }
 }

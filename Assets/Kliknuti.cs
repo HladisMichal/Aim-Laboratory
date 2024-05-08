@@ -11,7 +11,7 @@ public class Kliknuti : MonoBehaviour
     public Text PocetTxt;
     public Text CasTxt;
     public static float cas = 0;
-    public bool GameStarted = false;
+    private bool GameStarted = false;
 
     void Start()
     {
@@ -33,7 +33,9 @@ public class Kliknuti : MonoBehaviour
             GameStarted = false;
             TercPrefab.SetActive(false);
             VyherniText.transform.position = new Vector3(21f, 46f,-15f);
-            VyherniText.text = "Konec hry tv˘j Ëas byl: "+cas.ToString("F2");
+            VyherniText.text = "Konec hry tv≈Øj ƒças byl: "+cas.ToString("F2");
+            CasTxt.transform.position = new Vector3(2100f, 4000f,-15f);
+            PocetTxt.transform.position = new Vector3(2100f, 4000f,-15f);
             
         }
     }
@@ -44,7 +46,6 @@ public class Kliknuti : MonoBehaviour
      Vector3 nahodnaPozice = new Vector3(Random.Range(-788f, 894f), Random.Range(-489f, 364f), -50f);
         TercPrefab.transform.position = nahodnaPozice;
         pocetKliknuti++;
-        Debug.Log(pocetKliknuti);
     }
     public void Zpusteno()
     {

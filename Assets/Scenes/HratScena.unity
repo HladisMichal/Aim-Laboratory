@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b08c87571611b343b9088a24deee72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scena: DalsiUkolScena
+  Scena: HraNaPocetScena
 --- !u!1 &1502121053
 GameObject:
   m_ObjectHideFlags: 0

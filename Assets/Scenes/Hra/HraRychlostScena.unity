@@ -625,8 +625,8 @@ Transform:
   m_GameObject: {fileID: 522150174}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1545, y: -169, z: -33.994}
-  m_LocalScale: {x: 0.69062, y: 0.69062, z: 0.69062}
+  m_LocalPosition: {x: -1562.1, y: -144.45, z: -45.307}
+  m_LocalScale: {x: 0.46749616, y: 0.46749616, z: 0.46749616}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 774032686}
@@ -704,7 +704,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Konec hry...
+  m_Text: 
 --- !u!222 &553850183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -998,7 +998,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -981, y: -547, z: -161}
-  m_LocalScale: {x: 5.522102, y: 5.522102, z: 5.522102}
+  m_LocalScale: {x: 3.6866105, y: 3.6866105, z: 3.6866105}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1587,7 +1587,6 @@ MonoBehaviour:
   VyherniText: {fileID: 553850182}
   PocetTxt: {fileID: 56865272}
   CasTxt: {fileID: 1537983841}
-  GameStarted: 0
 --- !u!4 &1903099836
 Transform:
   m_ObjectHideFlags: 0
