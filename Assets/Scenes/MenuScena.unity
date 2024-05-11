@@ -1214,9 +1214,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2073013823}
-        m_TargetAssemblyTypeName: SkoreScenaManager, Assembly-CSharp
-        m_MethodName: scenaSkore
+      - m_Target: {fileID: 2073013825}
+        m_TargetAssemblyTypeName: ZmeneniSceny, Assembly-CSharp
+        m_MethodName: zmenScenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1276,6 +1276,7 @@ GameObject:
   - component: {fileID: 2073013821}
   - component: {fileID: 2073013823}
   - component: {fileID: 2073013824}
+  - component: {fileID: 2073013825}
   m_Layer: 0
   m_Name: PredelavaniScen
   m_TagString: Untagged
@@ -1335,6 +1336,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ec1c003c10f934caf1fa6e37b00cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2073013825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073013820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b08c87571611b343b9088a24deee72b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scena: SkoreScena
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

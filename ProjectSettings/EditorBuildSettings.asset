@@ -7,17 +7,17 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MenuScena.unity
-    guid: c2618e2b76d5f354caa370020cff25af
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/HratScena.unity
     guid: a66f9d178351c124bb7b9b1fe96a9c27
   - enabled: 1
     path: Assets/Scenes/SkoreScena.unity
     guid: b11944a4ece167e4db7be0e2875e9deb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Hra/DalsiUkolScena.unity
     guid: b51b85f50cf07844982948ea4c641ef7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Hra/HraNaCasScena.unity
     guid: c95f0ea558e8c4b49b14becaa71e48ac
   - enabled: 1
