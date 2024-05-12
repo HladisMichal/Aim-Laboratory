@@ -79,7 +79,7 @@ public class kliknout : MonoBehaviour
     {
         if(GameStarted)
         {
-            kliknutiVedle++;
+            kliknutiVedle += 1;
         }
     }
 

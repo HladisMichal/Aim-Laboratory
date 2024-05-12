@@ -51,7 +51,7 @@ public class SkoreScript : MonoBehaviour
     }
         else
     {
-        CasText.text = "Nejlepší časy v módu 20 kliknutí: žádné"; // pokud v seznamu časů není žádný čas, zobrazí se tento text
+        CasText.text = "Nejlepší časy v módu 20 kliknutí:\n žádné"; // pokud v seznamu časů není žádný čas, zobrazí se tento text
     }
 
 
@@ -74,7 +74,7 @@ public class SkoreScript : MonoBehaviour
     }
         else
     {
-            PocetText.text = "Nejvíce trefení terčů v módu 1 min: žádné"; 
+            PocetText.text = "Nejvíce trefení terčů v módu 1 min:\n žádné"; 
     }
 
 
@@ -126,11 +126,11 @@ public class SkoreScript : MonoBehaviour
     }
 
     // Zobrazení všech procent na nových řádcích
-    ProcentaText.text = "Procenta úspěšnosti a počt trefených terčů:\n" + string.Join("\n", procentaStrings);
+    ProcentaText.text = "Nejlepší procenta úspěšnosti a počet trefených terčů:\n" + string.Join("\n", procentaStrings);
 }
 else
 {
-    ProcentaText.text = "Procenta úspěšnosti a počt trefených terčů:\n žádné";
+    ProcentaText.text = "Nejlepší procenta úspěšnosti a počet trefených terčů:\n žádné";
 }
 
 
@@ -249,36 +249,73 @@ else
 }
 
     void LoadKliknuti()
-    {
-        string dir = "kliknutiData";
-        string path = dir + "\\kliknuti.txt";
-
-        // Kontrola, zda soubor existuje
-        if (File.Exists(path))
-        {
-            // Načtení všech řádků ze souboru
-            string[] lines = File.ReadAllLines(path);
-
-            // Přidání každého řádku do seznamu jako int
-            foreach (string line in lines)
-            {
-                int kliknuti;
-                if (int.TryParse(line, out kliknuti))
-                {
-                    kliknutiList.Add(kliknuti);
-                }
-            }
-        }
-    }
-
-    public void LoadProcenta()
 {
-    string dir = "procentaData";
-    if (Directory.Exists(dir))
+    string dir = "kliknutiData";
+    string path = dir + "\\kliknuti.txt";
+
+    // Kontrola, zda soubor existuje
+    if (File.Exists(path))
     {
-        string[] procentaStrings = File.ReadAllLines(dir + "\\procenta.txt");
-        procentaList = Array.ConvertAll(procentaStrings, s => double.Parse(s.Replace("%", ""))).ToList();
+        // Načtení všech řádků ze souboru a převod na int
+        kliknutiList = new List<int>(Array.ConvertAll(File.ReadAllLines(path), int.Parse));
+    }
+    else
+    {
+        Debug.Log("File not found: " + path);
     }
 }
 
+    public void LoadProcenta()
+    {
+        string dir = "procentaData";
+        if (Directory.Exists(dir))
+        {
+            string[] procentaStrings = File.ReadAllLines(dir + "\\procenta.txt");
+            procentaList = Array.ConvertAll(procentaStrings, s => double.Parse(s.Replace("%", ""))).ToList();
+        }
+    }
+
+    public void ResetSkore()
+    {
+        string dir = "skoreData";
+        string filePath = dir + "\\skore.txt";
+        if (File.Exists(filePath))
+        {
+            File.WriteAllText(filePath, string.Empty);
+        }
+        LoadSkore();
+
+    }
+
+    public void ResetCas()
+    {
+        string dir = "casData";
+        string filePath = dir + "\\cas.txt";
+        if (File.Exists(filePath))
+        {
+            File.WriteAllText(filePath, string.Empty);
+        }
+        LoadCas();
+    }
+
+    public void ResetKliknuti()
+    {
+        string dir = "kliknutiData";
+        string filePath = dir + "\\kliknuti.txt";
+        if (File.Exists(filePath))
+        {
+            File.WriteAllText(filePath, string.Empty);
+        }
+        LoadKliknuti();
+    }
+    public void ResetProcenta()
+    {
+        string dir = "procentaData";
+        string filePath = dir + "\\procenta.txt";
+        if (File.Exists(filePath))
+        {
+            File.WriteAllText(filePath, string.Empty);
+        }
+        LoadProcenta();
+    }
 }

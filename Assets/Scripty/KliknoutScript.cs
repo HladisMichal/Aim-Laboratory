@@ -12,7 +12,7 @@ public class KliknoutScript : MonoBehaviour
     public Text CasTxt;
     public GameObject ZpetButton;
     public SkoreScript skoreScript; // reference na SkoreScript
-    private float cas = 10;
+    private float cas = 60;
     private bool GameStarted = false;
 
     void Start()

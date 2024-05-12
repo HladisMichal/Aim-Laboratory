@@ -1,19 +1,17 @@
 # To do list
 + ~~Pohyb terčů~~
 + Nastavit stejné velikosti kamery ()
-+ ~~Udělat endless mode~~
-+ ~~Udělat time mode~~
++ Udělat endless mode
++ Udělat time mode
 + ~~Udělat 20 terčů mode~~
 + Udělat statistiku
 + Udělat grafiku
 + ~~Vytvořit hitboxi~~
 + Spravit crosshair
 + ~~Vytvořit modely terčů~~
-+ udělat procenta přesnosti v módu 1 min a 20 terčů
 
 ## Bonusy
 + Výběr crosshair
-+ model zbraně která střílí na terče
 
 ## Materiály
 Github desktop: https://www.youtube.com/watch?v=sjlVox4f5Ww<br>

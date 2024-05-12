@@ -19,6 +19,8 @@ public class ZpusteniScriptu : MonoBehaviour
 
     void Start()
     {
+        initialDelay = 1000;
+        timer = initialDelay;
     }
 
     void MoveTargets()
@@ -43,8 +45,6 @@ public class ZpusteniScriptu : MonoBehaviour
         if (GameStarted)
         {
             MoveTargets();
-
-           
         }
     }
     

@@ -29,7 +29,7 @@ public class Kliknuti : MonoBehaviour
             CasTxt.text = cas.ToString("F2");
             PocetTxt.text = pocetKliknuti.ToString();
         
-         if (pocetKliknuti == 5)
+         if (pocetKliknuti == 20)
         {
             TercPrefab.SetActive(false);
             VyherniText.transform.position = new Vector3(21f, 46f,-15f);
