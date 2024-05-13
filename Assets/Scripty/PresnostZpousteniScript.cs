@@ -52,6 +52,7 @@ public class ZpusteniScriptu : MonoBehaviour
     public void ZpustHru()
     {
         ZpustitBtn.gameObject.SetActive(false);
+        infoTxt.transform.position = new Vector3(1455, -500, 0);
         infoTxt.gameObject.SetActive(false);
         GameStarted = true;
         Vector3 nahodnaPozice = new Vector3(Random.Range(101f, 1878f), Random.Range(30f, 904f), -50f);

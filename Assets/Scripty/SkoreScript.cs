@@ -168,7 +168,6 @@ else
     public void SaveCas(float cas)
     {
         // Přidání času do seznamu časů
-        Debug.Log("SaveCas called with cas = " + cas);
         casList.Add(cas);
 
         // Kontrola, zda existuje adresář, a pokud ne, vytvoří ho

@@ -40,7 +40,8 @@ public class kliknout : MonoBehaviour
                 TercPrefab2.SetActive(false);
                 TercPrefab3.SetActive(false);
                 ZpetButton.SetActive(true);
-                VyherniText.text = "Konec hry trefil jsi: "+ Kliknuti.ToString()+" tvoje přesnost byla: " + (procenta).ToString("F1") + "%";
+                VyherniText.transform.position = new Vector3(990, 500, 0);
+                VyherniText.text = "Konec hry trefil jsi: "+ Kliknuti.ToString()+"\nTvoje přesnost byla: " + (procenta).ToString("F1") + "%";
                 
                 skoreScript.SaveKliknuti(Kliknuti);
                 skoreScript.SaveProcenta(procenta);
@@ -53,6 +54,7 @@ public class kliknout : MonoBehaviour
     public void Zapnuto()
     {
         GameStarted = true;
+        VyherniText.transform.position = new Vector3(36, -500, 0);
     }
     public void Kliknuto1()
     {
@@ -79,7 +81,7 @@ public class kliknout : MonoBehaviour
     {
         if(GameStarted)
         {
-            kliknutiVedle += 1;
+            kliknutiVedle++;
         }
     }
 
