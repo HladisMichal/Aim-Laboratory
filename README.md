@@ -15,7 +15,6 @@ Hra jde ale stáhnout i jako aplikace, která se najde ve složce Build. Tu pak 
 + Celý projekt jsme psali v nejnovější verzi __Unity__ a jazyce __C#__.
 + Pro kolaboraci jsme používali __Github__, na kterém jsme taky měli soubor s věcmi, které ještě musíme udělat. Pokud jsme tedy pracovali na projektu i doma, mohli jsme se podívat, co například splnil ten druhý a co je ještě potřeba udělat.
 + Ke komunikaci mimo školu jsme používali __Discord__.
-## Tutoriály
 ## Materiály
 Základy v unity: https://youtu.be/XtQMytORBmM?si=yKoDABWEQJZfKt6o<br>
 Vytvářní a pracování s GameObjecty: https://youtu.be/b4EWpebaBK8?si=I3_0ZOAaZop50jJ_<br>
