@@ -1,4 +1,4 @@
-# AimLabs projekt
+# Aim Laboratory projekt
 ## Tvůrci
 Tvůrcemi hry jsou Štěpán Marek a Michal Hladiš.
 ## Popis hry
