@@ -5,6 +5,7 @@ Tvůrcemi hry jsou Štěpán Marek a Michal Hladiš.
 Hra je o trefování terčů myší ve 2D prostředí. V hlavním menu je na výběr několik gamemodů, aby hra rychle neomrzela. Na výběr bude například trefování 20 terčů, ztrefení terčů do 1 minuty a nebo endless mode. V hlavním menu ještě je možnost "Statistiky", kde se hráč může podívat na to jak se mu daří, nebo na jeho nejlepší skóre v určitých gamemodech.
 ## Instalace
 Hra se dá stáhnout z githubu a poté se musí otevřít v programu Unity.<br>
+Hra jde ale i stáhnout jako aplikace a stačí spustit pouze tu.<br>
 ***Hra slouží pouze pro počítač nebo notebook.***
 ## Gamemody
 1. Endless mode - V tomto modu jde o co nejpřesnější a nejrychlejší trefovaní terčů. Pokud minete 10 terčů hra končí a na konci se vám vypíšou vaše výsledky, které lte vidět i ve statistice v menu.
