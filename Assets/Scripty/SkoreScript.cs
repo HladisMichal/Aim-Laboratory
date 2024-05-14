@@ -24,7 +24,6 @@ public class SkoreScript : MonoBehaviour
         LoadKliknuti();
         LoadProcenta();
         UpdateTexts();
-
     }
 
     void Update()
