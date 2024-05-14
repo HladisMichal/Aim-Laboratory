@@ -26,8 +26,8 @@ public class Kliknuti : MonoBehaviour
         if (GameStarted)
         {
             cas+= Time.deltaTime;
-            CasTxt.text = cas.ToString("F2");
-            PocetTxt.text = pocetKliknuti.ToString();
+            CasTxt.text = "Uplynulý čas: " + cas.ToString("F2");
+            PocetTxt.text = "Počet trefených terčů: " + pocetKliknuti.ToString();
         
          if (pocetKliknuti == 20)
         {
