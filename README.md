@@ -24,11 +24,10 @@ Statistiky: https://www.youtube.com/watch?v=B2JsymHzgvE<br>
 Timer: https://www.youtube.com/watch?v=ijAN0QI70UU<br>
 Apk: https://www.youtube.com/watch?v=PM4p_w7zTDg<br>
 Main menu designy:<br>
-
 https://www.youtube.com/watch?v=Cq_Nnw_LwnI<br>
 https://www.youtube.com/watch?v=IuuKUaZQiSU<br>
 https://www.youtube.com/watch?v=-GWjA6dixV4<br>
 https://www.youtube.com/watch?v=RsgiYqLID-U<br>
-https://www.youtube.com/watch?v=DX7HyN7oJjE<br>
+https://www.youtube.com/watch?v=DX7HyN7oJjE
 ## Podpora
 Pokud jste ve hře našli nějaké chyby a nebo máte nápady na zlepšenní, neváhejte nám napsat vaše nápady, či upozornění na nějaké chyby. Budeme vaší zpětné vazbě otevření a budeme si jí vážit.
