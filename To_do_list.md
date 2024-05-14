@@ -11,6 +11,7 @@
 + ~~Vytvořit modely terčů~~
 
 ## Materiály
+Základy v unity: https://youtu.be/XtQMytORBmM?si=yKoDABWEQJZfKt6o
 Github desktop: https://www.youtube.com/watch?v=sjlVox4f5Ww<br>
 Statistiky: https://www.youtube.com/watch?v=B2JsymHzgvE<br>
 Timer: https://www.youtube.com/watch?v=ijAN0QI70UU<br>
