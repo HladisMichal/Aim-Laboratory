@@ -17,7 +17,7 @@ public class Kliknuti : MonoBehaviour
 
     void Start()
     {
-       
+       cas = 0;
     }
 
    
